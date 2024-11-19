@@ -1,0 +1,189 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Mar 25 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    vika (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s output97.fa --redo
+Seed:    456728 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Nov 19 10:53:33 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file output97.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 20 sequences with 31 columns, 15 distinct patterns
+0 parsimony-informative, 0 singleton sites, 31 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  hg38       0.00%    passed    100.00%
+   2  panTro4    0.00%    passed    100.00%
+   3  panPan1    0.00%    passed    100.00%
+   4  gorGor3    0.00%    passed    100.00%
+   5  ponAbe2    0.00%    passed    100.00%
+   6  nomLeu3    0.00%    passed    100.00%
+   7  rheMac3    0.00%    passed    100.00%
+   8  macFas5    0.00%    passed    100.00%
+   9  papAnu2    0.00%    passed    100.00%
+  10  chlSab2    0.00%    passed    100.00%
+  11  nasLar1    0.00%    passed    100.00%
+  12  rhiRox1    0.00%    passed    100.00%
+  13  calJac3    0.00%    passed    100.00%
+  14  saiBol1    0.00%    passed    100.00%
+  15  tarSyr2    0.00%    passed    100.00%
+  16  micMur1    0.00%    passed    100.00%
+  17  otoGar3    0.00%    passed    100.00%
+  18  tupBel1    0.00%    passed    100.00%
+  19  mm10       0.00%    passed    100.00%
+  20  canFam3    0.00%    passed    100.00%
+****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=14)
+NOTE: panTro4 is identical to hg38 but kept for subsequent analysis
+NOTE: canFam3 is identical to hg38 but kept for subsequent analysis
+WARNING: Your alignment contains too many identical sequences!
+NOTE: 17 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: panPan1 (identical to hg38) is ignored but added at the end
+NOTE: gorGor3 (identical to hg38) is ignored but added at the end
+NOTE: ponAbe2 (identical to hg38) is ignored but added at the end
+NOTE: nomLeu3 (identical to hg38) is ignored but added at the end
+NOTE: rheMac3 (identical to hg38) is ignored but added at the end
+NOTE: macFas5 (identical to hg38) is ignored but added at the end
+NOTE: papAnu2 (identical to hg38) is ignored but added at the end
+NOTE: chlSab2 (identical to hg38) is ignored but added at the end
+NOTE: nasLar1 (identical to hg38) is ignored but added at the end
+NOTE: rhiRox1 (identical to hg38) is ignored but added at the end
+NOTE: calJac3 (identical to hg38) is ignored but added at the end
+NOTE: saiBol1 (identical to hg38) is ignored but added at the end
+NOTE: tarSyr2 (identical to hg38) is ignored but added at the end
+NOTE: micMur1 (identical to hg38) is ignored but added at the end
+NOTE: otoGar3 (identical to hg38) is ignored but added at the end
+NOTE: tupBel1 (identical to hg38) is ignored but added at the end
+NOTE: mm10 (identical to hg38) is ignored but added at the end
+Alignment was printed to output97.fa.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to output97.fa.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using LG model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -90.271
+Optimal log-likelihood: -90.271
+Parameters optimization took 1 rounds (0.000 sec)
+Time for fast ML tree search: 0.000 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 42 protein models (sample size: 31) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            90.271       3   186.541      187.430      190.843
+  2  LG+F          80.794       22  205.587      332.087      237.135
+  3  WAG           91.062       3   188.125      189.014      192.427
+  4  WAG+F         80.794       22  205.587      332.087      237.135
+  5  JTT           90.730       3   187.459      188.348      191.761
+  6  JTT+F         80.794       22  205.587      332.087      237.135
+  7  JTTDCMut      90.793       3   187.586      188.475      191.888
+  8  JTTDCMut+F    80.794       22  205.587      332.087      237.135
+  9  DCMut         91.261       3   188.522      189.410      192.823
+ 10  DCMut+F       80.794       22  205.587      332.087      237.135
+ 11  VT            90.505       3   187.011      187.899      191.313
+ 12  VT+F          80.794       22  205.587      332.087      237.135
+ 13  PMB           89.696       3   185.393      186.282      189.695
+ 14  PMB+F         80.794       22  205.587      332.087      237.135
+ 15  Blosum62      89.962       3   185.924      186.812      190.226
+ 16  Blosum62+F    80.794       22  205.587      332.087      237.135
+ 17  Dayhoff       91.261       3   188.522      189.410      192.823
+ 18  Dayhoff+F     80.794       22  205.587      332.087      237.135
+ 19  mtREV         93.878       3   193.756      194.645      198.058
+ 20  mtREV+F       80.794       22  205.587      332.087      237.135
+ 21  mtART         93.374       3   192.749      193.638      197.051
+ 22  mtART+F       80.794       22  205.587      332.087      237.135
+ 23  mtZOA         92.820       3   191.641      192.530      195.943
+ 24  mtZOA+F       80.794       22  205.587      332.087      237.135
+ 25  mtMet         94.841       3   195.682      196.571      199.984
+ 26  mtMet+F       80.794       22  205.587      332.087      237.135
+ 27  mtVer         95.518       3   197.036      197.925      201.338
+ 28  mtVer+F       80.794       22  205.587      332.087      237.135
+ 29  mtInv         96.420       3   198.841      199.730      203.143
+ 30  mtInv+F       80.794       22  205.587      332.087      237.135
+ 31  mtMAM         94.004       3   194.007      194.896      198.309
+ 32  mtMAM+F       80.794       22  205.587      332.087      237.135
+ 33  HIVb          90.802       3   187.603      188.492      191.905
+ 34  HIVb+F        80.794       22  205.587      332.087      237.135
+ 35  HIVw          92.740       3   191.480      192.369      195.782
+ 36  HIVw+F        80.794       22  205.587      332.087      237.135
+ 37  FLU           90.866       3   187.732      188.621      192.034
+ 38  FLU+F         80.794       22  205.587      332.087      237.135
+ 39  rtREV         90.206       3   186.412      187.301      190.714
+ 40  rtREV+F       80.794       22  205.587      332.087      237.135
+ 41  cpREV         89.463       3   184.927      185.816      189.229
+ 42  cpREV+F       80.794       22  205.587      332.087      237.135
+Akaike Information Criterion:           cpREV
+Corrected Akaike Information Criterion: cpREV
+Bayesian Information Criterion:         cpREV
+Best-fit model: cpREV chosen according to BIC
+
+All model information printed to output97.fa.model.gz
+CPU time for ModelFinder: 0.016 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.016 seconds (0h:0m:0s)
+NOTE: State(s) A, C, Q, M, W not present in alignment and thus removed from Markov process to prevent numerical problems
+NOTE: 5 states (see above) are not present and thus removed from Markov process to prevent numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -89.463
+Optimal log-likelihood: -89.463
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters... 0.000 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -89.463
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.002 second
+Current best score: -89.463
+
+Do NNI search on 1 best initial trees
+Finish initializing candidate tree set (1)
+Current best tree score: -89.463 / CPU time: 0.002
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -89.463 / Time: 0h:0m:0s
+Iteration 20 / LogL: -89.463 / Time: 0h:0m:0s
+Iteration 30 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -89.463 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -89.463
+Optimal log-likelihood: -89.463
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -89.463
+Total tree length: 0.000
+
+Total number of iterations: 101
+CPU time used for tree search: 0.005 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.005 sec (0h:0m:0s)
+Total CPU time used: 0.010 sec (0h:0m:0s)
+Total wall-clock time used: 0.010 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                output97.fa.iqtree
+  Maximum-likelihood tree:       output97.fa.treefile
+  Likelihood distances:          output97.fa.mldist
+  Screen log file:               output97.fa.log
+
+Date and Time: Tue Nov 19 10:53:33 2024

@@ -1,0 +1,44 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Mar 25 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    vika (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s output52.fa --redo
+Seed:    355582 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Nov 19 10:50:06 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file output52.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 20 sequences with 57 columns, 49 distinct patterns
+24 parsimony-informative, 13 singleton sites, 20 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  hg38       0.00%    passed    100.00%
+   2  panTro4    0.00%    passed    100.00%
+   3  panPan1    0.00%    passed    100.00%
+   4  gorGor3  100.00%    passed      -nan%
+   5  ponAbe2    0.00%    passed    100.00%
+   6  nomLeu3    0.00%    passed    100.00%
+   7  rheMac3    0.00%    passed    100.00%
+   8  macFas5    0.00%    passed     99.98%
+   9  papAnu2    0.00%    passed    100.00%
+  10  chlSab2    0.00%    passed    100.00%
+  11  nasLar1  100.00%    passed      -nan%
+  12  rhiRox1    0.00%    passed     99.98%
+  13  calJac3    0.00%    passed     99.99%
+  14  saiBol1    0.00%    passed     97.14%
+  15  tarSyr2    0.00%    passed     21.41%
+  16  micMur1    1.75%    passed     99.69%
+  17  otoGar3    0.00%    passed     91.10%
+  18  tupBel1  100.00%    passed      -nan%
+  19  mm10       0.00%    passed     94.55%
+  20  canFam3    0.00%    passed     83.36%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL     15.09%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+WARNING: Sequence gorGor3 contains only gaps or missing data
+WARNING: Sequence nasLar1 contains only gaps or missing data
+WARNING: Sequence tupBel1 contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again

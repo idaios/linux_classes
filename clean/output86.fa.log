@@ -1,0 +1,42 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Mar 25 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    vika (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s output86.fa --redo
+Seed:    775140 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Nov 19 10:53:26 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file output86.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 20 sequences with 67 columns, 37 distinct patterns
+7 parsimony-informative, 9 singleton sites, 51 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  hg38       1.49%    passed    100.00%
+   2  panTro4    1.49%    passed    100.00%
+   3  panPan1    1.49%    passed    100.00%
+   4  gorGor3  100.00%    passed      -nan%
+   5  ponAbe2    1.49%    passed    100.00%
+   6  nomLeu3    1.49%    passed    100.00%
+   7  rheMac3    1.49%    passed    100.00%
+   8  macFas5    1.49%    passed    100.00%
+   9  papAnu2    1.49%    passed    100.00%
+  10  chlSab2    1.49%    passed    100.00%
+  11  nasLar1    1.49%    passed    100.00%
+  12  rhiRox1    1.49%    passed    100.00%
+  13  calJac3    1.49%    passed    100.00%
+  14  saiBol1    1.49%    passed    100.00%
+  15  tarSyr2    8.96%    passed    100.00%
+  16  micMur1    1.49%    passed    100.00%
+  17  otoGar3    1.49%    passed    100.00%
+  18  tupBel1    1.49%    passed    100.00%
+  19  mm10       1.49%    passed     99.58%
+  20  canFam3    1.49%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL      6.79%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+WARNING: Sequence gorGor3 contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again

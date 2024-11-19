@@ -1,0 +1,358 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Mar 25 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    vika (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s output5.fa --redo
+Seed:    134092 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Nov 19 10:48:33 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file output5.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 20 sequences with 34 columns, 26 distinct patterns
+6 parsimony-informative, 8 singleton sites, 20 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  hg38       0.00%    passed    100.00%
+   2  panTro4    0.00%    passed    100.00%
+   3  panPan1    0.00%    passed    100.00%
+   4  gorGor3    0.00%    passed    100.00%
+   5  ponAbe2    0.00%    passed    100.00%
+   6  nomLeu3    0.00%    passed    100.00%
+   7  rheMac3    0.00%    passed    100.00%
+   8  macFas5    0.00%    passed    100.00%
+   9  papAnu2    0.00%    passed    100.00%
+  10  chlSab2    0.00%    passed    100.00%
+  11  nasLar1    0.00%    passed    100.00%
+  12  rhiRox1    0.00%    passed    100.00%
+  13  calJac3    0.00%    passed    100.00%
+  14  saiBol1    0.00%    passed     34.19%
+  15  tarSyr2    0.00%    passed     99.99%
+  16  micMur1    0.00%    passed     99.94%
+  17  otoGar3    0.00%    passed     24.71%
+  18  tupBel1    0.00%    passed     95.31%
+  19  mm10       0.00%    passed     89.27%
+  20  canFam3    0.00%    passed     99.75%
+****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=18)
+NOTE: panTro4 is identical to hg38 but kept for subsequent analysis
+NOTE: 10 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: panPan1 (identical to hg38) is ignored but added at the end
+NOTE: gorGor3 (identical to hg38) is ignored but added at the end
+NOTE: ponAbe2 (identical to hg38) is ignored but added at the end
+NOTE: nomLeu3 (identical to hg38) is ignored but added at the end
+NOTE: rheMac3 (identical to hg38) is ignored but added at the end
+NOTE: macFas5 (identical to hg38) is ignored but added at the end
+NOTE: papAnu2 (identical to hg38) is ignored but added at the end
+NOTE: chlSab2 (identical to hg38) is ignored but added at the end
+NOTE: nasLar1 (identical to hg38) is ignored but added at the end
+NOTE: rhiRox1 (identical to hg38) is ignored but added at the end
+Alignment was printed to output5.fa.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to output5.fa.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -219.684
+Optimal log-likelihood: -219.612
+Proportion of invariable sites: 0.308
+Gamma shape alpha: 998.514
+Parameters optimization took 1 rounds (0.005 sec)
+Time for fast ML tree search: 0.019 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 34) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            221.130      17  476.259      514.509      502.207
+  2  LG+I          219.535      18  475.069      520.669      502.544
+  3  LG+G4         220.125      18  476.251      521.851      503.725
+  4  LG+I+G4       219.584      19  477.169      531.454      506.170
+  5  LG+R2         219.996      19  477.991      532.277      506.992
+  6  LG+R3         220.015      21  482.031      559.031      514.085
+ 14  LG+F          218.162      36  508.325      3172.325     563.274
+ 15  LG+F+I        216.480      37  506.960      3318.960     563.436
+ 16  LG+F+G4       216.965      37  507.930      3319.930     564.405
+ 17  LG+F+I+G4     216.520      38  509.040      3473.040     567.041
+ 18  LG+F+R2       216.908      38  509.816      3473.816     567.818
+ 27  WAG           220.446      17  474.893      513.143      500.841
+ 28  WAG+I         219.209      18  474.419      520.019      501.893
+ 29  WAG+G4        219.596      18  475.191      520.791      502.666
+ 30  WAG+I+G4      219.226      19  476.453      530.738      505.453
+ 31  WAG+R2        219.457      19  476.914      531.200      505.915
+ 40  WAG+F         218.755      36  509.511      3173.511     564.460
+ 41  WAG+F+I       217.141      37  508.283      3320.283     564.758
+ 42  WAG+F+G4      217.564      37  509.128      3321.128     565.603
+ 43  WAG+F+I+G4    217.189      38  510.378      3474.378     568.380
+ 44  WAG+F+R2      217.484      38  510.968      3474.968     568.970
+ 53  JTT           218.326      17  470.652      508.902      496.600
+ 54  JTT+I         216.971      18  469.942      515.542      497.416
+ 55  JTT+G4        217.458      18  470.915      516.515      498.390
+ 56  JTT+I+G4      217.000      19  471.999      526.285      501.000
+ 57  JTT+R2        217.325      19  472.650      526.936      501.651
+ 66  JTT+F         216.969      36  505.938      3169.938     560.887
+ 67  JTT+F+I       215.047      37  504.094      3316.094     560.569
+ 68  JTT+F+G4      215.482      37  504.964      3316.964     561.439
+ 69  JTT+F+I+G4    215.148      38  506.296      3470.296     564.298
+ 70  JTT+F+R2      215.486      38  506.972      3470.972     564.974
+ 79  JTTDCMut      218.313      17  470.625      508.875      496.573
+ 80  JTTDCMut+I    216.982      18  469.965      515.565      497.439
+ 81  JTTDCMut+G4   217.458      18  470.916      516.516      498.391
+ 82  JTTDCMut+I+G4 217.008      19  472.016      526.302      501.017
+ 83  JTTDCMut+R2   217.326      19  472.652      526.938      501.653
+ 92  JTTDCMut+F    217.015      36  506.030      3170.030     560.979
+ 93  JTTDCMut+F+I  215.138      37  504.276      3316.276     560.752
+ 94  JTTDCMut+F+G4 215.558      37  505.116      3317.116     561.591
+ 95  JTTDCMut+F+I+G4 215.231      38  506.462      3470.462     564.464
+ 96  JTTDCMut+F+R2 215.559      38  507.118      3471.118     565.119
+105  DCMut         221.649      17  477.299      515.549      503.247
+106  DCMut+I       220.422      18  476.844      522.444      504.318
+107  DCMut+G4      220.646      18  477.292      522.892      504.767
+108  DCMut+I+G4    220.430      19  478.860      533.146      507.861
+109  DCMut+R2      220.574      19  479.148      533.434      508.149
+118  DCMut+F       220.027      36  512.054      3176.054     567.003
+119  DCMut+F+I     218.041      37  510.082      3322.082     566.557
+120  DCMut+F+G4    218.305      37  510.610      3322.610     567.085
+121  DCMut+F+I+G4  218.079      38  512.158      3476.158     570.160
+122  DCMut+F+R2    218.316      38  512.631      3476.631     570.633
+131  VT            222.691      17  479.382      517.632      505.330
+132  VT+I          221.363      18  478.725      524.325      506.200
+133  VT+G4         221.859      18  479.719      525.319      507.193
+134  VT+I+G4       221.395      19  480.789      535.075      509.790
+135  VT+R2         221.707      19  481.414      535.699      510.414
+144  VT+F          220.966      36  513.932      3177.932     568.881
+145  VT+F+I        219.415      37  512.831      3324.831     569.306
+146  VT+F+G4       219.882      37  513.764      3325.764     570.239
+147  VT+F+I+G4     219.466      38  514.933      3478.933     572.934
+148  VT+F+R2       219.788      38  515.576      3479.576     573.578
+157  PMB           225.584      17  485.168      523.418      511.117
+158  PMB+I         224.075      18  484.150      529.750      511.625
+159  PMB+G4        224.514      18  485.029      530.629      512.503
+160  PMB+I+G4      224.133      19  486.266      540.552      515.267
+161  PMB+R2        224.432      19  486.865      541.150      515.865
+170  PMB+F         223.906      36  519.811      3183.811     574.760
+171  PMB+F+I       222.439      37  518.878      3330.878     575.353
+172  PMB+F+G4      222.827      37  519.653      3331.653     576.129
+173  PMB+F+I+G4    222.487      38  520.974      3484.974     578.976
+174  PMB+F+R2      222.769      38  521.537      3485.537     579.539
+183  Blosum62      226.167      17  486.334      524.584      512.282
+184  Blosum62+I    224.741      18  485.483      531.083      512.957
+185  Blosum62+G4   225.192      18  486.385      531.985      513.859
+186  Blosum62+I+G4 224.783      19  487.566      541.852      516.567
+187  Blosum62+R2   225.080      19  488.161      542.446      517.162
+196  Blosum62+F    223.368      36  518.735      3182.735     573.684
+197  Blosum62+F+I  221.990      37  517.979      3329.979     574.454
+198  Blosum62+F+G4 222.391      37  518.782      3330.782     575.257
+199  Blosum62+F+I+G4 222.017      38  520.034      3484.034     578.035
+200  Blosum62+F+R2 222.298      38  520.597      3484.597     578.598
+209  Dayhoff       221.649      17  477.298      515.548      503.247
+210  Dayhoff+I     220.419      18  476.837      522.437      504.312
+211  Dayhoff+G4    220.641      18  477.281      522.881      504.756
+212  Dayhoff+I+G4  220.427      19  478.853      533.139      507.854
+213  Dayhoff+R2    220.570      19  479.140      533.426      508.141
+222  Dayhoff+F     220.024      36  512.048      3176.048     566.997
+223  Dayhoff+F+I   218.028      37  510.057      3322.057     566.532
+224  Dayhoff+F+G4  218.290      37  510.579      3322.579     567.055
+225  Dayhoff+F+I+G4 218.066      38  512.131      3476.131     570.133
+226  Dayhoff+F+R2  218.303      38  512.606      3476.606     570.607
+235  mtREV         225.711      17  485.422      523.672      511.370
+236  mtREV+I       224.691      18  485.382      530.982      512.856
+237  mtREV+G4      224.899      18  485.798      531.398      513.273
+238  mtREV+I+G4    224.688      19  487.375      541.661      516.376
+239  mtREV+R2      224.955      19  487.910      542.196      516.911
+248  mtREV+F       217.967      36  507.934      3171.934     562.883
+249  mtREV+F+I     217.080      37  508.159      3320.159     564.635
+250  mtREV+F+G4    217.216      37  508.433      3320.433     564.908
+251  mtREV+F+I+G4  217.078      38  510.157      3474.157     568.158
+252  mtREV+F+R2    217.260      38  510.519      3474.519     568.521
+261  mtART         230.892      17  495.783      534.033      521.731
+262  mtART+I       227.325      18  490.650      536.250      518.125
+263  mtART+G4      227.447      18  490.894      536.494      518.369
+264  mtART+I+G4    227.053      19  492.107      546.393      521.108
+265  mtART+R2      228.076      19  494.151      548.437      523.152
+274  mtART+F       222.233      36  516.466      3180.466     571.415
+275  mtART+F+I     219.770      37  513.541      3325.541     570.016
+276  mtART+F+G4    219.539      37  513.078      3325.078     569.554
+277  mtART+F+I+G4  219.337      38  514.674      3478.674     572.676
+278  mtART+F+R2    220.060      38  516.120      3480.120     574.121
+287  mtZOA         222.082      17  478.165      516.415      504.113
+288  mtZOA+I       220.047      18  476.093      521.693      503.568
+289  mtZOA+G4      220.511      18  477.023      522.623      504.497
+290  mtZOA+I+G4    220.065      19  478.131      532.416      507.131
+291  mtZOA+R2      220.641      19  479.282      533.568      508.283
+300  mtZOA+F       216.904      36  505.807      3169.807     560.756
+301  mtZOA+F+I     215.105      37  504.211      3316.211     560.686
+302  mtZOA+F+G4    215.357      37  504.713      3316.713     561.189
+303  mtZOA+F+I+G4  215.082      38  506.165      3470.165     564.167
+304  mtZOA+F+R2    215.480      38  506.959      3470.959     564.961
+313  mtMet         225.590      17  485.180      523.430      511.128
+314  mtMet+I       223.771      18  483.542      529.142      511.016
+315  mtMet+G4      224.418      18  484.836      530.436      512.311
+316  mtMet+I+G4    223.791      19  485.583      539.869      514.584
+317  mtMet+R2      224.390      19  486.780      541.065      515.780
+326  mtMet+F       216.659      36  505.319      3169.319     560.268
+327  mtMet+F+I     214.806      37  503.611      3315.611     560.087
+328  mtMet+F+G4    215.337      37  504.675      3316.675     561.150
+329  mtMet+F+I+G4  214.828      38  505.656      3469.656     563.658
+330  mtMet+F+R2    215.343      38  506.687      3470.687     564.689
+339  mtVer         224.342      17  482.683      520.933      508.631
+340  mtVer+I       222.085      18  480.170      525.770      507.644
+341  mtVer+G4      222.935      18  481.870      527.470      509.344
+342  mtVer+I+G4    222.112      19  482.223      536.509      511.224
+343  mtVer+R2      222.861      19  483.721      538.007      512.722
+352  mtVer+F       214.608      36  501.215      3165.215     556.164
+353  mtVer+F+I     212.700      37  499.401      3311.401     555.876
+354  mtVer+F+G4    213.283      37  500.567      3312.567     557.042
+355  mtVer+F+I+G4  212.736      38  501.471      3465.471     559.473
+356  mtVer+F+R2    213.227      38  502.454      3466.454     560.456
+365  mtInv         230.542      17  495.083      533.333      521.031
+366  mtInv+I       228.780      18  493.560      539.160      521.034
+367  mtInv+G4      229.399      18  494.797      540.397      522.272
+368  mtInv+I+G4    228.808      19  495.617      549.902      524.617
+369  mtInv+R2      229.360      19  496.721      551.007      525.722
+378  mtInv+F       218.620      36  509.241      3173.241     564.190
+379  mtInv+F+I     216.721      37  507.441      3319.441     563.917
+380  mtInv+F+G4    217.190      37  508.380      3320.380     564.855
+381  mtInv+F+I+G4  216.760      38  509.519      3473.519     567.521
+382  mtInv+F+R2    217.198      38  510.396      3474.396     568.398
+391  mtMAM         229.207      17  492.414      530.664      518.362
+392  mtMAM+I       226.458      18  488.916      534.516      516.391
+393  mtMAM+G4      227.024      18  490.049      535.649      517.523
+394  mtMAM+I+G4    226.470      19  490.939      545.225      519.940
+395  mtMAM+R2      227.298      19  492.596      546.881      521.596
+404  mtMAM+F       219.743      36  511.486      3175.486     566.435
+405  mtMAM+F+I     217.892      37  509.784      3321.784     566.260
+406  mtMAM+F+G4    218.181      37  510.362      3322.362     566.838
+407  mtMAM+F+I+G4  217.854      38  511.707      3475.707     569.709
+408  mtMAM+F+R2    218.392      38  512.784      3476.784     570.786
+417  HIVb          221.688      17  477.375      515.625      503.323
+418  HIVb+I        220.572      18  477.144      522.744      504.619
+419  HIVb+G4       221.057      18  478.114      523.714      505.589
+420  HIVb+I+G4     220.581      19  479.163      533.448      508.164
+421  HIVb+R2       220.926      19  479.852      534.137      508.853
+430  HIVb+F        214.933      36  501.866      3165.866     556.815
+431  HIVb+F+I      213.507      37  501.013      3313.013     557.488
+432  HIVb+F+G4     213.830      37  501.659      3313.659     558.135
+433  HIVb+F+I+G4   213.534      38  503.067      3467.067     561.069
+434  HIVb+F+R2     213.833      38  503.667      3467.667     561.669
+443  HIVw          234.816      17  503.631      541.881      529.580
+444  HIVw+I        231.921      18  499.843      545.443      527.317
+445  HIVw+G4       232.680      18  501.359      546.959      528.834
+446  HIVw+I+G4     231.991      19  501.982      556.267      530.982
+447  HIVw+R2       232.628      19  503.256      557.542      532.257
+456  HIVw+F        224.389      36  520.778      3184.778     575.727
+457  HIVw+F+I      220.800      37  515.601      3327.601     572.076
+458  HIVw+F+G4     221.576      37  517.152      3329.152     573.627
+459  HIVw+F+I+G4   221.179      38  518.359      3482.359     576.361
+460  HIVw+F+R2     221.628      38  519.256      3483.256     577.258
+469  FLU           222.704      17  479.408      517.658      505.356
+470  FLU+I         220.634      18  477.268      522.868      504.743
+471  FLU+G4        221.417      18  478.833      524.433      506.308
+472  FLU+I+G4      220.695      19  479.389      533.675      508.390
+473  FLU+R2        221.283      19  480.567      534.852      509.567
+482  FLU+F         216.097      36  504.193      3168.193     559.142
+483  FLU+F+I       213.945      37  501.890      3313.890     558.365
+484  FLU+F+G4      214.674      37  503.348      3315.348     559.823
+485  FLU+F+I+G4    214.011      38  504.022      3468.022     562.023
+486  FLU+F+R2      214.642      38  505.285      3469.285     563.287
+495  rtREV         226.215      17  486.429      524.679      512.377
+496  rtREV+I       224.682      18  485.364      530.964      512.839
+497  rtREV+G4      225.325      18  486.650      532.250      514.124
+498  rtREV+I+G4    224.716      19  487.432      541.718      516.433
+499  rtREV+R2      225.150      19  488.300      542.585      517.300
+508  rtREV+F       220.102      36  512.204      3176.204     567.153
+509  rtREV+F+I     218.650      37  511.301      3323.301     567.776
+510  rtREV+F+G4    219.259      37  512.517      3324.517     568.992
+511  rtREV+F+I+G4  218.659      38  513.319      3477.319     571.321
+512  rtREV+F+R2    219.114      38  514.228      3478.228     572.230
+521  cpREV         222.221      17  478.442      516.692      504.391
+522  cpREV+I       221.016      18  478.032      523.632      505.506
+523  cpREV+G4      221.241      18  478.482      524.082      505.956
+524  cpREV+I+G4    221.026      19  480.052      534.337      509.053
+525  cpREV+R2      221.176      19  480.352      534.638      509.353
+534  cpREV+F       218.582      36  509.163      3173.163     564.112
+535  cpREV+F+I     217.066      37  508.132      3320.132     564.608
+536  cpREV+F+G4    217.184      37  508.369      3320.369     564.844
+537  cpREV+F+I+G4  217.052      38  510.103      3474.103     568.105
+538  cpREV+F+R2    217.212      38  510.424      3474.424     568.426
+Akaike Information Criterion:           JTT+I
+Corrected Akaike Information Criterion: JTTDCMut
+Bayesian Information Criterion:         JTTDCMut
+Best-fit model: JTTDCMut chosen according to BIC
+
+All model information printed to output5.fa.model.gz
+CPU time for ModelFinder: 0.993 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 1.006 seconds (0h:0m:1s)
+NOTE: State(s) W not present in alignment and thus removed from Markov process to prevent numerical problems
+NOTE: 1 states (see above) are not present and thus removed from Markov process to prevent numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -218.313
+Optimal log-likelihood: -218.313
+Parameters optimization took 1 rounds (0.001 sec)
+Computing ML distances based on estimated model parameters... 0.001 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -215.557
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.020 second
+Computing log-likelihood of 93 initial trees ... 0.025 seconds
+Current best score: -215.557
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -215.557
+UPDATE BEST LOG-LIKELIHOOD: -215.557
+Iteration 10 / LogL: -215.558 / Time: 0h:0m:0s
+Iteration 20 / LogL: -220.054 / Time: 0h:0m:0s
+Finish initializing candidate tree set (4)
+Current best tree score: -215.557 / CPU time: 0.078
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -215.557
+UPDATE BEST LOG-LIKELIHOOD: -215.557
+Iteration 30 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -215.557
+Iteration 60 / LogL: -215.561 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -218.313 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -215.557 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -215.557
+Optimal log-likelihood: -215.557
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -215.557
+Total tree length: 0.686
+
+Total number of iterations: 102
+CPU time used for tree search: 0.316 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.325 sec (0h:0m:0s)
+Total CPU time used: 0.324 sec (0h:0m:0s)
+Total wall-clock time used: 0.333 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                output5.fa.iqtree
+  Maximum-likelihood tree:       output5.fa.treefile
+  Likelihood distances:          output5.fa.mldist
+  Screen log file:               output5.fa.log
+
+Date and Time: Tue Nov 19 10:48:34 2024
